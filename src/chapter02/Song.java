@@ -9,6 +9,24 @@ public class Song {
 	private int year;
 	private int track;
 	
+	public Song(){
+		
+	}
+	
+	public Song(String artist, String title){
+//		this.artist=artist;
+//		this.title=title;
+		this(artist, title, null, null,0,0);
+	}
+	public Song(String artist, String title, String album, String composer, int track, int year){
+		this.artist=artist;
+		this.title=title;
+		this.album=album;
+		this.composer=composer;
+		this.track=track;
+		this.year=year;
+	}
+	
 	
 	public String getTitle() {
 		return title;
@@ -51,6 +69,7 @@ public class Song {
 				track + "번 track, " + composer + " 작곡)");
 	}
 
+	
 
 
 }
